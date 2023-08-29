@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #caf0f8;
+}
+
+/* ............................. nav bar............... */
+.logo{
+    width: 40px;
+    height: 40px;
+    margin-right: 0.5rem;
+    border-radius: 100%;
+}
+
+.bg-color {
+    background-color: #023e8a;
+    
+}
+/* ............................. nav bar............... */
+
+
+.containerr {
+    padding: 2rem;
+    width: 40%;
+    margin: 4rem auto;
+    border-radius: 10px;
+    border: 7px solid #03045e;
+}
+
+.weather__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+input {
+    border: none;
+    background-color: rgba(2, 62, 138, 0.5);
+    backdrop-filter: blur(50px);
+    outline: none;
+    padding: 0.5rem 2.5rem;
+    border-radius: 5px;
+}
+
+input::placeholder {
+    color: black;
+}
+
+.weather__search {
+    position: relative;
+
+}
+
+.weather__search i {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 15px;
+
+}
+
+.weather__units {
+    font-size: 30px;
+}
+
+.weather__units span {
+    cursor: pointer;
+}
+
+.weather__units span:first-child {
+    margin-right: 0.5rem;
+}
+
+.weather__body {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.weather__datetime {
+    margin-bottom: 2rem;
+    font-size: 14px;
+}
+
+.weather__forecast {
+    background-color: rgba(2, 62, 138, 0.5);
+    align-items: center;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+}
+
+.weather__icon img {
+    width: 150px;
+}
+
+.weather__temperature {
+    font-size: 50px;
+}
+
+.weather__minmax {
+    display: flex;
+    justify-content: center;
+}
+
+.weather__minmax p {
+    font-size: 20px;
+    margin: 0.5rem;
+}
+
+.weather__info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    margin-top: 3rem;
+}
+
+.weather__card {
+    display: flex;
+    align-items: center;
+    background-color: rgba(2, 62, 138, 0.5);
+    border: 1px solid #03045e;
+
+
+
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.weather__card i {
+    font-size: 3rem;
+    margin-right: 1rem;
+}
+
+.weather__card p {
+    font-size: 20px;
+}
+
+@media(max-width: 936px){
+    .containerr {
+        width: 90%;
+    }
+
+    .weather__header {
+        flex-direction: column;
+    }
+
+    .weather__units {
+        margin-top: 1rem;
+    }
+}
+
+
+@media(max-width: 400px){
+    .weather__info {
+        grid-template-columns: none;
+    }
+}
+
+
+.color-01{
+   color:#03045e;
+}
+
+.color-02{
+    color: #023e8a;
+}
+
+
+/* ............................about page ...................... */
+
+
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
+nav a.active {
+    color: #ff9900;
+}
+
+.about-section {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ade8f4;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin: 0 10px;
+}
+
+.bg-color-card{
+    background-color: #90e0ef;
+}
+
+/* .......................map................... */
+.containerer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.map-frame {
+    border: none;
+    width: 80%;
+    height: 70vh;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.8);
+}
+
+
+/* ..........................youtube........................ */
+
+.video-container {
+    display: flex;
+    overflow-x: scroll;
+    padding: 10px;
+}
+
+.video-card {
+    flex: 0 0 auto;
+    margin-right: 10px;
+    border: 1px solid #0077b6;
+    background-color: #90e0ef;
+    padding: 10px;
+    width: 290px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.video-title {
+    color: black;
+    text-decoration: none;
+}
+
+.video-title:hover {
+    text-decoration: line-through;
+}
+
+a {
+    text-decoration: none; 
+    color: black;
+}
+
+
+/* new 7 day weather................... */
+.card {
+    border: none;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.bg-color-card {
+    background-color: #90e0ef;
+}
+
+.text-body-secondary {
+    color: #6c757d;
+}
+
+
+.weather-icon {
+    width: 80px;
+    height: auto;
+}
+
